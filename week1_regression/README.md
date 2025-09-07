@@ -6,7 +6,7 @@ Nous présentons les **concepts théoriques de la régression** étudiés en Dat
 
 ## 🌱 Qu’est-ce que la régression ?  
 
-La **régression** est une méthode statistique et de machine learning qui permet de **modéliser** et **prédire** une variable cible (souvent notée **y**) en fonction d’une ou plusieurs variables explicatives (**features**, notées \(x_1, x_2, …, x_n\)).  
+La **régression** est une méthode statistique et de machine learning qui permet de **modéliser** et **prédire** une variable cible (souvent notée **y**) en fonction d’une ou plusieurs variables explicatives (**features**, notées ($$x_1, x_2, …, x_n$$)).  
 
 👉 En clair : c’est une façon de trouver la **relation** entre des données.  
 
@@ -27,7 +27,7 @@ $$
 - ($$x_i$$) = variables explicatives  
 - ($$beta_i$$) = coefficients (impact de chaque variable)  
 - ($$epsilon$$) = erreur  
-$$
+
 **Exemple :** prédire le **prix d’une maison** en fonction de sa surface et du nombre de chambres.  
 
 ---
