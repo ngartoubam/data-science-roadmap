@@ -1,6 +1,6 @@
 # 📘 Week 1 - Régression
 
-Ce document présente les **concepts théoriques de la régression** étudiés en Data Science.  
+Nous présentons les **concepts théoriques de la régression** étudiés en Data Science.  
 
 ---
 
