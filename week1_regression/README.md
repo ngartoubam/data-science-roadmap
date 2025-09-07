@@ -25,8 +25,8 @@ $$
 
 - (y) = valeur à prédire  
 - ($$x_i$$) = variables explicatives  
-- ($$beta_i$$) = coefficients (impact de chaque variable)  
-- ($$epsilon$$) = erreur  
+- ($$\beta_i$$) = coefficients (impact de chaque variable)  
+- ($$\epsilon$$) = erreur  
 
 **Exemple :** prédire le **prix d’une maison** en fonction de sa surface et du nombre de chambres.  
 
