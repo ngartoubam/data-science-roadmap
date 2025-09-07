@@ -21,13 +21,13 @@ La **régression** est une méthode statistique et de machine learning qui perme
 
 $$
 y = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + \dots + \beta_n x_n + \epsilon
-$$
+
 
 - \(y\) = valeur à prédire  
 - \(x_i\) = variables explicatives  
 - \(\beta_i\) = coefficients (impact de chaque variable)  
 - \(\epsilon\) = erreur  
-
+$$
 **Exemple :** prédire le **prix d’une maison** en fonction de sa surface et du nombre de chambres.  
 
 ---
