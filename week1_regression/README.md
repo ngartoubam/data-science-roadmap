@@ -21,12 +21,12 @@ La **régression** est une méthode statistique et de machine learning qui perme
 
 $$
 y = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + \dots + \beta_n x_n + \epsilon
+$$
 
-
-- \(y\) = valeur à prédire  
-- \(x_i\) = variables explicatives  
-- \(\beta_i\) = coefficients (impact de chaque variable)  
-- \(\epsilon\) = erreur  
+- (y) = valeur à prédire  
+- ($$x_i$$) = variables explicatives  
+- ($$ beta_i $$) = coefficients (impact de chaque variable)  
+- ($$ epsilon $$) = erreur  
 $$
 **Exemple :** prédire le **prix d’une maison** en fonction de sa surface et du nombre de chambres.  
 
@@ -37,9 +37,9 @@ $$
 - **Objectif :** prédire une **catégorie** (oui/non, malade/pas malade, spam/non-spam).  
 - Utilise la **fonction sigmoïde** pour transformer la sortie en probabilité entre 0 et 1 :  
 
-\[
+$$
 P(y=1|x) = \frac{1}{1+e^{-(\beta_0 + \beta_1 x)}}
-\]
+$$
 
 - Si la probabilité > 0.5 → classe 1  
 - Sinon → classe 0  
