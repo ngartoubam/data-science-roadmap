@@ -70,4 +70,4 @@ Le Lasso peut ignorer les variables inutiles en mettant leurs coefficients à 0.
 
 ---
 
-✍️ *Cours - Week 1 du parcours Data Science.*
+✍️ *Cours - Week 1. Parcours Data Science.*
