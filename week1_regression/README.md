@@ -1,76 +1,73 @@
-# Semaine 1 : Régression - Machine Learning Classique
+# 📘 Week 1 - Régression
 
-## 🎯 Objectifs
-- Comprendre et appliquer la **régression linéaire** (simple et multiple)
-- Découvrir la **régression logistique** (binaire et multiclasse)
-- Appliquer les techniques de **régularisation** : Ridge, Lasso, ElasticNet
-- Utiliser **Scikit-learn** pour entraîner, évaluer et comparer des modèles
-- Réaliser un **mini-projet** de prédiction du prix des maisons
+Ce document présente les **concepts théoriques de la régression** étudiés en Data Science.  
 
 ---
 
-## 📖 Concepts Théoriques
+## 🌱 Qu’est-ce que la régression ?  
 
-### 1. Régression Linéaire
-- Modèle pour prédire une variable continue :  
+La **régression** est une méthode statistique et de machine learning qui permet de **modéliser** et **prédire** une variable cible (souvent notée **y**) en fonction d’une ou plusieurs variables explicatives (**features**, notées \(x_1, x_2, …, x_n\)).  
+
+👉 En clair : c’est une façon de trouver la **relation** entre des données.  
+
+**Exemple :** prédire la note d’un étudiant (y) en fonction du nombre d’heures d’étude (x).  
+
+---
+
+## 📘 1. Régression Linéaire  
+
+- **Objectif :** prédire une **valeur continue** (salaire, prix, température).  
+- **Modèle mathématique :**  
+
 \[
-y = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + ... + \beta_n x_n + \epsilon
+y = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + \dots + \beta_n x_n + \epsilon
 \]
-- Objectif : approximer la relation entre **features** et **target**.
-- Utilisations : prédiction du prix d’une maison, prévision de ventes, etc.
 
-### 2. Régression Logistique
-- Sert à prédire une **classe** (0/1 ou multiclasse) à partir des features.  
-- Fonction sigmoïde :  
+- \(y\) = valeur à prédire  
+- \(x_i\) = variables explicatives  
+- \(\beta_i\) = coefficients (impact de chaque variable)  
+- \(\epsilon\) = erreur  
+
+**Exemple :** prédire le **prix d’une maison** en fonction de sa surface et du nombre de chambres.  
+
+---
+
+## 📘 2. Régression Logistique  
+
+- **Objectif :** prédire une **catégorie** (oui/non, malade/pas malade, spam/non-spam).  
+- Utilise la **fonction sigmoïde** pour transformer la sortie en probabilité entre 0 et 1 :  
+
 \[
 P(y=1|x) = \frac{1}{1+e^{-(\beta_0 + \beta_1 x)}}
-\]  
-- Exemples : prédire si un client va churner, survie d’un passager Titanic.
+\]
 
-### 3. Régularisation
-- Évite le **surapprentissage** (overfitting) sur des datasets avec beaucoup de variables.  
-- **Ridge (L2)** : pénalise les grands coefficients  
-- **Lasso (L1)** : pousse certains coefficients à 0 (sélection de variables)  
-- **ElasticNet** : combinaison de L1 et L2
+- Si la probabilité > 0.5 → classe 1  
+- Sinon → classe 0  
+
+**Exemple :** prédire si un client va **résilier un abonnement** (1 = oui, 0 = non).  
 
 ---
 
-## ⚙️ Scikit-learn API
-| Modèle | Classe Scikit-learn |
-|--------|------------------|
-| Régression linéaire | `LinearRegression()` |
-| Régression logistique | `LogisticRegression()` |
-| Ridge | `Ridge()` |
-| Lasso | `Lasso()` |
-| ElasticNet | `ElasticNet()` |
+## 📘 3. Régularisation  
+
+Lorsque le modèle a beaucoup de variables, il peut trop bien mémoriser les données (**overfitting**).  
+La régularisation ajoute une **pénalisation** pour contrôler les coefficients.  
+
+- **Ridge (L2)** : réduit les grands coefficients (jamais à 0).  
+- **Lasso (L1)** : pousse certains coefficients à 0 → sélectionne automatiquement les variables utiles.  
+- **ElasticNet** : combinaison de L1 et L2.  
+
+**Exemple :** prédire le salaire avec 50 variables (âge, ville, diplôme, …).  
+Le Lasso peut ignorer les variables inutiles en mettant leurs coefficients à 0.  
 
 ---
 
-## 📝 Mini-Projet : Prédiction du Prix des Maisons
-- **Dataset** : Boston Housing (`sklearn.datasets`) ou Kaggle House Prices
-- **Étapes recommandées** :
-1. Charger et explorer les données (`pandas`, `head()`, `describe()`)  
-2. Prétraitement : nettoyage, normalisation, séparation train/test  
-3. Entraîner plusieurs modèles : LinearRegression, Ridge, Lasso  
-4. Évaluer avec **RMSE** et **R²**  
-5. Visualiser les résultats (scatter plots, courbes prédiction vs réalité)  
+## ✅ Résumé  
 
-- **Extensions possibles** :
-  - Tester ElasticNet et comparer aux autres modèles  
-  - Sélection de features importantes avec `coef_`  
-  - GridSearchCV pour tuning hyperparamètres
+- **Régression linéaire** → prédire un **nombre** (valeur continue).  
+- **Régression logistique** → prédire une **classe** (catégorie).  
+- **Régularisation** → éviter le surapprentissage et simplifier le modèle.  
 
 ---
 
-## 📚 Ressources
-- Aurélien Géron – *Hands-On Machine Learning with Scikit-Learn & TensorFlow*, Chapitre 4  
-- [Scikit-learn Linear Models Documentation](https://scikit-learn.org/stable/modules/linear_model.html)  
-- [Kaggle House Prices Dataset](https://www.kaggle.com/c/house-prices-advanced-regression-techniques)  
-
----
-
-## 🚀 Instructions pour exécuter les notebooks
-1. Installer les packages nécessaires :  
-```bash
-pip install numpy pandas matplotlib scikit-learn
-
+✍️ *Cours - Week 1 du parcours Data Science.*
