@@ -19,9 +19,9 @@ La **régression** est une méthode statistique et de machine learning qui perme
 - **Objectif :** prédire une **valeur continue** (salaire, prix, température).  
 - **Modèle mathématique :**  
 
-\[
+$$
 y = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + \dots + \beta_n x_n + \epsilon
-\]
+$$
 
 - \(y\) = valeur à prédire  
 - \(x_i\) = variables explicatives  
