@@ -15,7 +15,7 @@
 ### 1. Régression Linéaire
 - Modèle pour prédire une variable continue :  
 $$
-y = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + ... + \beta_n x_n + \epsilon
+y = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + \dots + \beta_n x_n + \epsilon
 $$
 - Objectif : approximer la relation entre **features** et **target**.
 - Utilisations : prédiction du prix d’une maison, prévision de ventes, etc.
