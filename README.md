@@ -103,6 +103,3 @@ Ensuite :
 - PyTorch
 - Jupyter Notebook
 
-## 🎯 Objectif
-Créer un portfolio de projets pratiques en Data Science et Machine Learning.
->>>>>>> 4313b9e21776fc74c46dfa9b33af6ea5f52af197
