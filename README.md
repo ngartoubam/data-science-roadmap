@@ -14,18 +14,18 @@
 
 ### 1. Régression Linéaire
 - Modèle pour prédire une variable continue :  
-\[
+$$
 y = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + ... + \beta_n x_n + \epsilon
-\]
+$$
 - Objectif : approximer la relation entre **features** et **target**.
 - Utilisations : prédiction du prix d’une maison, prévision de ventes, etc.
 
 ### 2. Régression Logistique
 - Sert à prédire une **classe** (0/1 ou multiclasse) à partir des features.  
 - Fonction sigmoïde :  
-\[
+$$
 P(y=1|x) = \frac{1}{1+e^{-(\beta_0 + \beta_1 x)}}
-\]  
+$$  
 - Exemples : prédire si un client va churner, survie d’un passager Titanic.
 
 ### 3. Régularisation
