@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Semaine 1 : Régression - Machine Learning Classique
 
 ## 🎯 Objectifs
@@ -13,10 +12,12 @@
 ## 📖 Concepts Théoriques
 
 ### 1. Régression Linéaire
-- Modèle pour prédire une variable continue :  
+- Modèle pour prédire une variable continue : 
+ 
 $$
 y = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + \dots + \beta_n x_n + \epsilon
 $$
+
 - Objectif : approximer la relation entre **features** et **target**.
 - Utilisations : prédiction du prix d’une maison, prévision de ventes, etc.
 
