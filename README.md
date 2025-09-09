@@ -24,9 +24,11 @@ $$
 ### 2. Régression Logistique
 - Sert à prédire une **classe** (0/1 ou multiclasse) à partir des features.  
 - Fonction sigmoïde :  
+
 $$
-P(y=1|x) = \frac{1}{1+e^{-(\beta_0 + \beta_1 x)}}
+P(y=1|x) = \frac{1}{1+e^{ - ( \beta_0 + \beta_1 x)}}
 $$  
+
 - Exemples : prédire si un client va churner, survie d’un passager Titanic.
 
 ### 3. Régularisation
